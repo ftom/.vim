@@ -156,7 +156,7 @@ let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 " let g:hybrid_use_Xresources = 1
 " let g:rehash256 = 1
-colorscheme solarized
+" colorscheme solarized
 set guifont=Inconsolata:h15
 set guioptions-=L
 
@@ -181,8 +181,8 @@ autocmd FileType qf wincmd J
 ":cn      next error
 ":cp      previous error
 ":clist   list all errors
-map <C-n> :cn<CR>
-map <C-m> :cp<CR>
+" map <C-n> :cn<CR>
+" map <C-m> :cp<CR>
 
 nnoremap <silent> <leader>q :Sayonara<CR>
 
@@ -254,8 +254,8 @@ nmap <leader>w :w!<cr>
 nnoremap <space> zz
 
 " Move up and down on splitted lines (on small width screens)
-map <Up> gk
-map <Down> gj
+"map <Up> gk
+"map <Down> gj
 map k gk
 map j gj
 
@@ -305,9 +305,9 @@ endfunction
 
 " Set 80 character line limit
 if exists('+colorcolumn')
-  set colorcolumn=80
+  set colorcolumn=100
 else
-  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>100v.\+', -1)
 endif
 
 " ----------------------------------------- "
